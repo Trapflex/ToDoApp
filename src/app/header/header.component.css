@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31 49 76);
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .titleTop {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+  }
+  .titleBottom {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
