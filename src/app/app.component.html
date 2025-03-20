@@ -1,5 +1,5 @@
 <td-header></td-header>
 <td-filter></td-filter>
-<td-selection></td-selection>
-<td-list></td-list>
+<td-selection (todoAdded)="listComponent.addTodo($event)"></td-selection>
+<td-list #listComponent></td-list>
 
