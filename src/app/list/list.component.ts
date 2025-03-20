@@ -28,6 +28,11 @@ export class ListComponent implements OnInit {
     this.saveTodos();
     this.applyFilter('all');
   }
+  toggleCompletion(todo: { text: string, completed: boolean }) {
+    todo.completed = !todo.completed;
+    this.saveTodos();
+    this.applyFilter('all');
+  }
 
   applyFilter(filter: string) {
     if (filter === 'completed') {
