@@ -1,5 +1,5 @@
 <td-header></td-header>
-<td-filter></td-filter>
+<td-filter (filterChanged)="listComponent.applyFilter($event)"></td-filter>
 <td-selection (todoAdded)="listComponent.addTodo($event)"></td-selection>
 <td-list #listComponent></td-list>
 

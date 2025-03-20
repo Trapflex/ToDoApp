@@ -1,6 +1,6 @@
 <div class="todo-list">
-    <div class="todo-item" *ngFor="let todo of todos">
-      <input type="checkbox" class="todo-checkbox" />
+    <div class="todo-item" *ngFor="let todo of filteredTodos">
+      <input type="checkbox" class="todo-checkbox" [(ngModel)]="todo.completed" />
       <span>{{ todo.text }}</span>
       <button class="delete-button" (click)="deleteTodo(todo)">Delete</button>
     </div>
