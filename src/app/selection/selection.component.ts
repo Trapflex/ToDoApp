@@ -1,15 +1,13 @@
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
-import { EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-
 
 @Component({
   selector: 'td-selection',
+  standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './selection.component.html',
-  styleUrl: './selection.component.css'
+  styleUrls: ['./selection.component.css']
 })
 export class SelectionComponent {
   newTodoText: string = '';
